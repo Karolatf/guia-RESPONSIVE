@@ -3,18 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Proyecto Responsive 8-13</title>
     <link rel="stylesheet" href="estilos.css">  
 </head>
 <body>
-    <header>
-    <h1>Mi Sitio</h1>
-    <nav class="menu">
-      <a href="#">Inicio</a>
-      <a href="#">Servicios</a>
-      <a href="#">Blog</a>
-      <a href="#">Contacto</a>
-    </nav>
-  </header>
+    
+   <h1>Proyecto Responsive (Puntos 8 al 13)</h1>
+
+  <!-- Punto 8: Tarjetas -->
+  <section class="tarjetas">
+    <div class="tarjeta">Tarjeta 1</div>
+    <div class="tarjeta">Tarjeta 2</div>
+    <div class="tarjeta">Tarjeta 3</div>
+  </section>
+
+<!-- Punto 10: Formulario -->
+  <section class="formulario">
+    <h2>Formulario de contacto</h2>
+    <form>
+      <input type="text" placeholder="Nombre">
+      <input type="email" placeholder="Correo">
+      <textarea placeholder="Mensaje"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Punto 12: Imagen adaptativa -->
+<section class="imagen-adaptativa">
+  <h2>Imagen adaptativa</h2>
+  <picture>
+    <source media="(max-width: 600px)" srcset="https://www.patasencasa.com/sites/default/files/styles/article_detail_mobile/public/2024-06/Singapur%20cat.jpg.webp?itok=owlA3D4G">
+    <source media="(max-width: 1024px)" srcset="https://www.patasencasa.com/sites/default/files/styles/article_detail_tablet/public/2024-06/Singapur%20cat.jpg.webp?itok=owlA3D4G">
+    <img src="https://www.patasencasa.com/sites/default/files/styles/article_detail_desktop/public/2024-06/Singapur%20cat.jpg.webp?itok=owlA3D4G" alt="Gato Singapur">
+  </picture>
+</section>
+
 </body>
 </html>

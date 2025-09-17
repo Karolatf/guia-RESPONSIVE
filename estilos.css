@@ -1,57 +1,72 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   font-family: Arial, sans-serif;
-}
-
-header {
-  background: #cec6c651;
-  color: #ed4e4e;
+  margin: 0;
+  padding: 0;
   text-align: center;
-  padding: 1rem;
 }
 
-.menu {
+/* Punto 8: Tarjetas responsivas */
+.tarjetas {
   display: flex;
-  justify-content: center;
   gap: 1rem;
-  background: #b4d6cffa;
   padding: 1rem;
 }
-
-.menu a {
-  text-decoration: none;
-  color: #000000c0;
-  background: #d6ebff;
-  padding: 0.7rem 1.2rem;
-  border-radius: 6px;
-  transition: background 0.3s;
+.tarjeta {
+  flex: 1;
+  background: lightblue;
+  padding: 2rem;
+  border-radius: 8px;
 }
-
-.menu a:hover {
-  background: #ddd;
-}
-
-/* Tablet */
-@media (max-width: 992px) {
-  h1 {
-    font-size: 10rem;
-  }
-  .intro {
-    font-size: 400rem;
+@media (max-width: 600px) {
+  .tarjetas {
+    flex-direction: column;
   }
 }
 
-/* Móvil */
+/* Punto 9: Estilos de impresión */
+@media print {
+  body {
+    background: white;
+    color: black;
+    font-size: 12pt;
+  }
+  .tarjetas, .imagen-adaptativa {
+    display: none;
+  }
+}
+/* Punto 10: Formulario responsivo */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding: 1rem;
+}
+form input, form textarea {
+  flex: 1 1 300px;
+  padding: 0.5rem;
+}
+button {
+  padding: 0.5rem 1rem;
+  background: darkblue;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* Punto 11: Fuentes con unidades relativas */
+h1 {
+  font-size: 2rem;
+}
 @media (max-width: 600px) {
   h1 {
-    font-size: 10.5rem;
+    font-size: 1.2rem;
   }
-  .intro {
-    font-size: 0.90m;
-  }
+}
+/* Punto 12: Imagen responsiva */
+.imagen-adaptativa img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
